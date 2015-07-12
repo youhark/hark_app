@@ -38,6 +38,10 @@
           %li= link_to 'Feature 1', '#feature1'
           %li= link_to 'Feature 2', '#feature2'
           %li= link_to 'Feature 3', '#feature3'
+        %ul.nav.navbar-nav.navbar-right
+          %li= link_to 'Contact', ""
+          %li= link_to 'About', ""
+          %li= render partial: "application/account_dropdown"
 
     = yield
 

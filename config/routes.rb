@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users, class_name: 'FormUser', :controllers => { omniauth_callbacks: 'omniauth_callbacks', registrations: 'registrations' }
+  devise_for :users, class_name: 'FormUser',
+             :controllers => { omniauth_callbacks: 'omniauth_callbacks', registrations: 'registrations' }
   post '/signup' => 'splash#signup', as: :splash_signup
   get '/splash' => 'splash#index'
   root 'splash#index'
