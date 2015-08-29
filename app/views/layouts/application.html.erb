@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,42 +9,44 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+
     <title>Jumbotron Template for Bootstrap</title>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  	<%= csrf_meta_tags %>
-
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
-    <nav class="navbar navbar-fixed-top">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <a class="" href="#"><img class="navbar-brand" src="img/Hark-logo.png" alt=""></a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Explore <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Playlists</a></li>
+          <li><a href="#">Explore <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#">Playlists</a></li>
         </ul>
         <div class="navbar-right">
-          <button type="submit" class="btn btn-sign-in navbar-btn">Sign in with Twitter</button>
+          <button type="button" class="btn btn-sign-in navbar-btn">Sign in with Twitter</button>
         </div>
       </div>
     </nav>
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container showcase">
@@ -51,10 +54,11 @@
           <h2>THIS WEEK ON HARK</h2>
           <h1>Hello, world!</h1>
           <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-default btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <p><a class="btn btn-default btn-lg" href="#" role="button">Listen &raquo;</a></p>
         </div>
       </div>
     </div>
+
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -72,12 +76,31 @@
             <h3>Create playlists for your morning routine, business education, etc.</h3>
           </div>
         </div>
+        <div class="stripe playlist">
+          <div class="playlist-info">
+            <div class="owner-info">
+              <img src="#" alt="">
+              <div class="owner-detail">
+                <h2 class="feature_label">Featured Playlist</h2>
+                <a class="made_by" href="#">Made by @jasonmarkbeaton</a>
+              </div>
+            </div>
+            <div class="playlist_details">
+              <h1>Morning Rituals</h1>
+              <p>Just some things that help me get started in the morning.</p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <hr>
+
       <footer>
         <p>&copy; Company 2014</p>
       </footer>
     </div> <!-- /container -->
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -87,4 +110,3 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-Add Comment
