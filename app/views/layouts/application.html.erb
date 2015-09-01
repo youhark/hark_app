@@ -35,19 +35,22 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="" href="#"><img class="navbar-brand" src="img/Hark-logo.png" alt=""></a>
+          <a class="" href="#"><img class="navbar-brand" src="images/logo.svg" alt=""></a>
         </div>
         <ul class="nav navbar-nav">
           <li><a href="#">Explore <span class="sr-only">(current)</span></a></li>
           <li class="active"><a href="#">Playlists</a></li>
         </ul>
         <div class="navbar-right">
+          <button type="button" class="btn btn-default navbar-btn">+</button>
+          <!-- if user signed in, display user avatar and settings -->
           <button type="button" class="btn btn-sign-in navbar-btn">Sign in with Twitter</button>
+          <!-- end if user signed in-->
         </div>
       </div>
     </nav>
 
-    <%= yeild %>
+    <%= yield %>
 
       <footer>
         <p>&copy; Company 2014</p>
