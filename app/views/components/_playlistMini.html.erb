@@ -1,5 +1,4 @@
 <div class="stripe playlist">
-  
   <!-- this will repete -->
   <div class="playlist-info">
     
@@ -7,40 +6,33 @@
       <img src="/images/face.jpg" alt="hello">
       <div class="owner-detail">
         <h2 class="feature_label">Featured Playlist</h2>
-        <a class="made_by" href="#">Made by @jasonmarkbeaton</a>
+        <a class="made_by" href="#">Made by <%= playlist.user.email %></a>
       </div>
         <div class="playlist_details">
         <h1><%= playlist.title %></h1>
         <p><%= playlist.description %></p>
       </div>
     </div>
-    
     <!-- this will repeat -->
     <ul class="article-mini">
-      <li>
-        <div class="img-div" data-image="/images/featured-photo.jpeg">
-        </div>
-        <div class="article-info">
-          <h3>Bob Villa</h3>
-          <h2>3 things to do when you get out of bed.</h2>
-        </div>
-        <div class="article-footer">
-          <div class="time">3:54</div>
-          <div class="category">Business</div>
-        </div>
-    	</li>
-      <li>
-        <div class="img-div" data-image="/images/featured-photo-2.jpeg">
-        </div>
-        <div class="article-info">
-          <h3>Bob Villa</h3>
-          <h2>3 things to do when you get out of bed.</h2>
-        </div>
-        <div class="article-footer">
-          <div class="time">3:54</div>
-          <div class="category">Business</div>
-        </div>
-      </li>
+        <% playlist.articles.each do |article| %>
+          <li>
+            <div class="img-div" data-image="<%= article.image_url %>">
+            </div>
+            <div class="article-info">
+              <h3><%= article.author %></h3>
+              <h2><%= article.title %></h2>
+            </div>
+            <div class="article-footer">
+              <div class="time"><%= article.length_in_seconds %></div>
+              <div class="category">
+                <% article.categories.each do |category| %>
+                  <%= category.name  %>
+                <% end %> 
+              </div>
+            </div>
+        	</li>
+        <% end %>
     </ul>
   </div>
 </div>

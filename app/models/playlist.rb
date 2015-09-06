@@ -1,12 +1,10 @@
 class Playlist < ActiveRecord::Base
 
+  belongs_to :user
+  has_and_belongs_to_many :articles
+
   def self.featured 
     where(featured: true)
   end
 
-  private
-
-  def playlist_params
-    params.require(:playlist).permit(:featured, :description, :user_id, :title)
-  end
 end
