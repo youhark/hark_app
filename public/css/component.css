@@ -1,4 +1,5 @@
 
+
 .owner-info {
     float: left;
     width: 350px;
@@ -10,9 +11,12 @@
 .stripe.playlist {
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
+  background-color: #fff;
   overflow-x: hidden; 
   height: 440px;
   padding: 20px 0;
+  margin: 25px 0;
+
 }
 .playlist-info {
   margin-left: 100px;
