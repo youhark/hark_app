@@ -15,7 +15,7 @@ doug.email = 'doug@email.com'
 doug.encrypted_password = BCrypt::Password.create('password') 
 doug.save!(:validate => false)
 
-Article.create([
+$article_1 = Article.create([
   {
     author: 'Tom',
     title: '10 things',
