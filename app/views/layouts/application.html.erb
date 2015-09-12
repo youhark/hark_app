@@ -13,11 +13,7 @@
     <title>Hark. Listen to narrated articles from around the world.</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/bootstrap-social.css" rel="stylesheet">
-    <link href="css/component.css" rel="stylesheet">
-    <link href="css/profile.css" rel="stylesheet">
+    <%= stylesheet_link_tag "application", media: "all" %>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,17 +38,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function(){
-
-      $('.img-div').each(function(){
-        var dataImage = $(this).data('image');
-        $(this).css('background-image','url('+dataImage+')');
-      });
-
-    });
-    </script>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
