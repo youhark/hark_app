@@ -1,4 +1,4 @@
-<!-- <h2>Sign upsss</h2>
+<!-- <h2>Sign upxxxx</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -26,15 +26,18 @@
   </div>
 <% end %>
 
-<%= render "users/shared/links" %> -->
+<%= render "users/shared/links" %>
+ -->
 
-<div class="container content-wrapper">
+ <div class="container content-wrapper white-bg">
   <div class="signup-wrapper">
     <div class="signup-form-wrapper">
       <div class="signup-form-col">
         <ul class="nav nav-tabs nav-justified">
           <li role="presentation" class="active"><a href="#">Sign Up</a></li>
-          <li role="presentation"><a href="file:///Users/J/Desktop/Hark-Signup/login.html#">Login</a></li>
+          <li role="presentation">
+            <%= link_to("Login", new_user_session_path) %>
+          </li>
         </ul>
         <br/>
         <div class="tab-content">

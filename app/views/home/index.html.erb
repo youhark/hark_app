@@ -8,12 +8,9 @@
     </div>
   </div>
 </div>
-
-
-<!-- Example row of columns -->
-<div class="row">
-  <div class="message">
-    <div class="col-md-4">
+<div class="home-page-wrapper">
+  <div class="row message">
+    <div class="row col-md-4">
       <h2>Discover</h2>
       <h3>Discover narrated articles and playlists from leaders and creators in our community.</h3>
     </div>
@@ -28,7 +25,6 @@
   </div>
   <section class="featured-playlist">
     <% @playlists.each do |playlist|%>
-      
     	<%= render 'components/playlistMini', playlist: playlist %>
     <% end %>
 	</section>

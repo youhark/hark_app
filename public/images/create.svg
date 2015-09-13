@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="stroke-icons" sketch:type="MSLayerGroup" transform="translate(-545.000000, -272.000000)" fill="#273859">
+            <g id="Group" transform="translate(545.000000, 272.000000)" sketch:type="MSShapeGroup">
+                <path d="M4,11 L6,11 C7.104,11 8,10.104 8,9 L8,2 C8,0.896 7.104,0 6,0 L4,0 C2.896,0 2,0.896 2,2 L2,9 C2,10.104 2.896,11 4,11 L4,11 Z M4,1 L6,1 C6.553,1 7,1.448 7,2 L7,3 L6.5,3 C6.224,3 6,3.224 6,3.5 C6,3.776 6.224,4 6.5,4 L7,4 L7,5 L6.5,5 C6.224,5 6,5.224 6,5.5 C6,5.776 6.224,6 6.5,6 L7,6 L7,7 L6.5,7 C6.224,7 6,7.224 6,7.5 C6,7.776 6.224,8 6.5,8 L7,8 L7,9 C7,9.552 6.553,10 6,10 L4,10 C3.447,10 3,9.552 3,9 L3,8 L3.5,8 C3.776,8 4,7.776 4,7.5 C4,7.224 3.776,7 3.5,7 L3,7 L3,6 L3.5,6 C3.776,6 4,5.776 4,5.5 C4,5.224 3.776,5 3.5,5 L3,5 L3,4 L3.5,4 C3.776,4 4,3.776 4,3.5 C4,3.224 3.776,3 3.5,3 L3,3 L3,2 C3,1.448 3.447,1 4,1 Z M9,8 L9,9.5 C9,10.881 7.881,12 6.5,12 L6,12 L4,12 L3.5,12 C2.119,12 1,10.881 1,9.5 L1,8 L0,8 L0,9.5 C0,11.433 1.566,13 3.5,13 L4,13 L4,15 L2.5,15 C2.224,15 2,15.224 2,15.5 C2,15.776 2.224,16 2.5,16 L7.5,16 C7.776,16 8,15.776 8,15.5 C8,15.224 7.776,15 7.5,15 L6,15 L6,13 L6.5,13 C8.434,13 10,11.433 10,9.5 L10,8 L9,8 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

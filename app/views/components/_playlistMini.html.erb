@@ -6,7 +6,7 @@
       <img src="/images/face.jpg" alt="hello">
       <div class="owner-detail">
         <h2 class="feature_label">Featured Playlist</h2>
-        <a class="made_by" href="#">Made by <%= playlist.user.email %></a>
+        <%= link_to("Made by #{playlist.user.email}", "#" , {class: "made_by"}) %>
       </div>
         <div class="playlist_details">
         <h1><%= playlist.title %></h1>
