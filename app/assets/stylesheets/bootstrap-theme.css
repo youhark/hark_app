@@ -222,7 +222,7 @@ fieldset[disabled] .btn-danger {
   background-color: #fff;
   background-repeat: repeat-x;
   text-shadow: 0 1px 0 #fff;
-  border-color: #4A4A4A;
+  border-color: #F3610F;
   color: #4A4A4A;
 }
 .btn-default:hover,
@@ -233,7 +233,7 @@ fieldset[disabled] .btn-danger {
 .btn-default:active,
 .btn-default.active {
   background-color: #d4e5fe;
-  border-color: #0666f1;
+  border-color: #F3610F;
 }
 .btn-sign-up {
   background-image: -webkit-linear-gradient(top, #F48644 0%, #F3610F 100%);
