@@ -15,54 +15,58 @@ doug.email = 'doug@email.com'
 doug.encrypted_password = BCrypt::Password.create('password') 
 doug.save!(:validate => false)
 
-$article_1 = Article.create([
-  {
-    author: 'Tom',
-    title: '10 things',
-    length_in_seconds: 250,
-    image_url:'/images/featured-photo.jpeg'  
-
-  },
-  {
-    author: 'John',
-    title: '10 awesome things',
-    length_in_seconds: 250,
-    image_url:'/images/featured-photo-2.jpeg'  
-  },
-  {
-    author: 'Doug',
-    title: '20 awesome things',
-    length_in_seconds: 250,
-    image_url:'/images/featured-photo.jpeg'  
-  },
-  {
-    author: 'Jason',
-    title: '30 awesome things',
-    length_in_seconds: 250,
-    image_url:'/images/featured-photo-2.jpeg'  
-  }
+jason = User.new
+jason.email = 'jason@email.com'
+jason.encrypted_password = BCrypt::Password.create('password') 
+jason.save!(:validate => false)
 
 
+profile_1 = Profile.create(
+  first_name: 'Doug',  
+  last_name: 'Steinberg',
+  bio: 'I am a web developer and I am going craxzy!',
+  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/sauro/128.jpg',
+  location: 'Florida',
+  link: 'www.mypage.com'
+)
 
-])
+profile_2 = Profile.create(
+  first_name: 'Jason',  
+  last_name: 'Beaton',
+  bio: 'I am a web developer also and I am going craxzy!',
+  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg',
+  location: 'New Hampshire',
+  link: 'www.jason.com'
+)
 
-playlist = Playlist.create([ 
-	{
-    user_id: doug.id, 
-    title: 'Playlist 1', 
-    description: 'Lorem ipsum dolor sit amet.', 
-    featured: true
-  },
-  {
-    user_id: doug.id, 
-    title: 'Playlist 2', 
-    description: 'Lorem ipsum dolor sit amet, consectetur.', 
-    featured: true
-  },
-  {
-    user_id: doug.id, 
-    title: 'Playlist 3', 
-    description: 'Lorem ipsum dolor sit amet, consectetur.', 
-    featured: false
-  }  
-])
+doug.profile = profile_1 
+jason.profile = profile_2 
+
+
+article_1 = Article.create(author: 'Tom',title: '10 things',length_in_seconds: 250,image_url:'/images/featured-photo.jpeg')
+article_2 = Article.create(author: 'Dave',title: '20 things',length_in_seconds: 250,image_url:'/images/featured-photo-2.jpeg')
+article_3 = Article.create(author: 'Jen',title: '30 things',length_in_seconds: 250,image_url:'/images/featured-photo-2.jpeg')
+article_4 = Article.create(author: 'Kim',title: '40 things',length_in_seconds: 250,image_url:'/images/featured-photo.jpeg')
+
+
+playlist_1 = Playlist.create(user_id: doug.id, title: 'Playlist 1', description: 'Lorem ipsum dolor sit amet.', featured: true)
+playlist_2 = Playlist.create(user_id: doug.id, title: 'Playlist 1', description: 'Lorem ipsum dolor sit amet, consectetur.', featured: true)
+playlist_3 = Playlist.create(user_id: doug.id, title: 'Playlist 1', description: 'Lorem ipsum dolor sit amet, blahhh.', featured: false)
+
+category_1 = Category.create(name: "Science")
+category_2 = Category.create(name: "Health")
+
+article_1.categories << category_1
+article_2.categories << category_2
+article_3.categories << category_2
+article_4.categories << category_1
+
+playlist_1.articles << article_1 
+playlist_1.articles << article_2 
+playlist_2.articles << article_3 
+playlist_2.articles << article_4 
+
+doug.playlists << playlist_1
+jason.playlists << playlist_2
+jason.playlists << playlist_3
+

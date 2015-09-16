@@ -20,6 +20,8 @@ apt-get -y install xvfb
 apt-get -y install libqt4-dev
 # install common DB and tools
 apt-get -y install postgresql-9.1 redis-server sqlite3 imagemagick nodejs
+# install tmux 
+apt-get -y install tmux
 
 apt-get -y install npm
 
