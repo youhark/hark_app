@@ -5,14 +5,16 @@
     </div>
     <ul class="nav navbar-nav">
       <li><%= link_to("Explore", "#") %></li>
-      <li class="active"><%= link_to("Playlist", "#") %></li>
+      <li class="active"><%= link_to("Playlists", "#") %></li>
     </ul>
     <div class="navbar-right">
-      <button type="button" class="btn btn-default navbar-btn">+</button>
+      <button type="button" class="btn btn-default navbar-btn">+ Create Playlist</button>
       <!-- if user signed in, display user avatar and settings -->
-      <%= link_to("Sign Up", new_user_registration_path) %>
-      <button type="button" class="btn btn-sign-in navbar-btn" data-toggle="modal" data-target="#myModal">Sign in with Twitter</button>
+      <div class="btn-group" role="group">
+      <%= link_to("Sign Up", new_user_registration_path, {class: "btn btn-sign-up navbar-btn"}) %>
+      <%= link_to("Log In", new_user_session_path, {class: "btn btn-default navbar-btn"}) %>
       <!-- end if user signed in-->
+      </div>
     </div>
   </div>
 </nav>

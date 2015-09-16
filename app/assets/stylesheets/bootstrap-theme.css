@@ -75,19 +75,19 @@
 }
 @font-face {
   font-family: brandon-light;
-  src: url(../fonts/brandon_light-webfont.svg),
-  url(../fonts/brandon_light-webfont.eot),
-  url(../fonts/brandon_light-webfont.ttf),
-  url(../fonts/brandon_light-webfont.otf),
-  url(../fonts/brandon_light-webfont.woff);
+  src: url(/fonts/brandon_light-webfont.svg),
+  url(/fonts/brandon_light-webfont.eot),
+  url(/fonts/brandon_light-webfont.ttf),
+  url(/fonts/brandon_light-webfont.otf),
+  url(/fonts/brandon_light-webfont.woff);
 }
 @font-face {
   font-family: brandon-bold;
-  src: url(../fonts/brandon_bld-webfont.svg),
-  url(../fonts/brandon_bld-webfont.eot),
-  url(../fonts/brandon_bld-webfont.ttf),
-  url(../fonts/brandon_bld-webfont.otf),
-  url(../fonts/brandon_bld-webfont.woff);
+  src: url(/fonts/brandon_bld-webfont.svg),
+  url(/fonts/brandon_bld-webfont.eot),
+  url(/fonts/brandon_bld-webfont.ttf),
+  url(/fonts/brandon_bld-webfont.otf),
+  url(/fonts/brandon_bld-webfont.woff);
 }
 
 .navbar-color {
@@ -105,19 +105,28 @@
 .showcase .details h1 {
   font-size: 32px;
   line-height: 28px;
-  color: #273859;
+  color: #fff;
   font-family: brandon-light, sans-serif;
 }
 .showcase .details h2 {
-  color: #273859;
-  font-size: 32px;
+  margin-bottom: 4px;
+  margin-top: 0;
+  color: #F3610F;
+  font-size: 12px;
+  letter-spacing: 1.5pt;
   font-family: brandon-light, sans-serif;
+}
+.showcase .details p {
+  color: #fff;
+}
+.home-page-wrapper {
+  margin-top: -30px;
 }
 .message {
   width: 100%;
 }
 .message .col-md-4 {
-  padding-bottom: 60px;
+  padding: 30px 60px;
   height: 100%;
 }
 .message h2{
