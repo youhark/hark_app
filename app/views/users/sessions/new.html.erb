@@ -40,12 +40,12 @@
             <br/>
             <div class="tab-content">
               <form class="form-horizontal">
-              <a class="btn btn-block btn-social btn-lg btn-twitter">
+              <%= link_to user_omniauth_authorize_path(:twitter), {class: 'btn btn-block btn-social btn-lg btn-twitter'} do %>
                 <i class="fa fa-twitter"></i> Sign in with Twitter
-              </a>
-              <a class="btn btn-block btn-social btn-lg btn-facebook">
+              <% end %>
+              <%= link_to user_omniauth_authorize_path(:facebook), {class: 'btn btn-block btn-social btn-lg btn-facebook'} do %>
                 <i class="fa fa-facebook"></i> Sign in with Facebook
-              </a>
+              <% end %>
                 <fieldset>
                   <div class="form-group">
                     <label for="inputEmail" class="control-label">Email</label>

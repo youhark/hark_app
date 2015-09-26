@@ -18,3 +18,6 @@
 /.vagrant
 /.idea/*
 tmux*
+
+# Ignore application configuration
+/config/application.yml

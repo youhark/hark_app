@@ -5,4 +5,12 @@ $(document).ready(function(){
     $(this).css('background-image','url('+dataImage+')');
   });
 
+  $(".article-details").mouseenter(function(){
+    $(this).addClass("hover");
+  })
+
+  .mouseleave
+
+  ;
+
 });
